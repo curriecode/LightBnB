@@ -28,16 +28,6 @@ const getUserWithEmail = (email) => {
     .catch((err) => {
       return err;
     });
-  // let user;
-  // for (const userId in users) {
-  //   user = users[userId];
-  //   if (user.email.toLowerCase() === email.toLowerCase()) {
-  //     break;
-  //   } else {
-  //     user = null;
-  //   }
-  // }
-  // return Promise.resolve(user);
 };
 exports.getUserWithEmail = getUserWithEmail;
 
@@ -58,7 +48,6 @@ const getUserWithId = (id) => {
     .catch((err) => {
       return err;
     });
-  // return Promise.resolve(users[id]);
 };
 exports.getUserWithId = getUserWithId;
 
@@ -81,10 +70,6 @@ const addUser = (user) => {
     .catch((err) => {
       return err;
     });
-  // const userId = Object.keys(users).length + 1;
-  // user.id = userId;
-  // users[userId] = user;
-  // return Promise.resolve(user);
 };
 exports.addUser = addUser;
 
